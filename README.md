@@ -14,7 +14,7 @@ The chatbot uses:
 </p>
 ## Installation
 <p>Follow the steps below to set up and run AmulGPT locally or with Docker.</p>
-> git clone <your-repo-url>
+>>  git clone <your-repo-url>
 cd AmulGPT
 
 
