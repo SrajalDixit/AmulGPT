@@ -107,10 +107,18 @@ docker build -t srajaldixit/amulgpt:latest .
 ```bash
 docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
 ```
+
+## Features / Tech Stack
+
+- **Ollama 3.2 (1B parameters)** – Local language model powering responses.  
+- **WSL (Windows Subsystem for Linux)** – Provides an easy Linux environment for running the project.  
+- **Docker Containers** – Allows running the project in a single click with all dependencies preconfigured.  
+- **Gradio** – Interactive web UI for chatting with AmulGPT.  
+- **Pinecone** – Vector database for fast semantic search and RAG-based responses.
+
 ⚠️ Note : The model may hallucinate sometimes due to weak prompts or model limitations.
 
 If you ever get stuck, you can rely on the Commands_readme folder, which contains a detailed Markdown file (commands.md) listing all commands for environment setup, conda, Docker, and Ollama.
-
 
 
 
