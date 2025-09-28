@@ -14,8 +14,10 @@ The chatbot uses:
 </p>
 ## Installation
 <p>Follow the steps below to set up and run AmulGPT locally or with Docker.</p>
+### 1. Clone the repository
 ```bash
-git clone https://github.com/SrajalDixit/AmulGPT```
+git clone https://github.com/SrajalDixit/AmulGPT
+cd AmulGPT
 
 
 
