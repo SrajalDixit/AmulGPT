@@ -6,4 +6,10 @@ The chatbot uses:
 - Ollama as the local language model engine.
 - Pinecone as the vector database for fast and accurate semantic search.
 - RAG pipeline to integrate document retrieval with generative AI for precise answers.
+## Implementation
+<p align="center">
+  <img src="assets/screenshots/amulgpt1.png" alt="Tasks Screen" width="250"/>
+  <img src="assets/screenshots/amulgpt2.png" alt="Notes Screen" width="250"/>
+  <img src="assets/screenshots/amulgpt3.png" alt="AI Assistant" width="250"/>
+</p>
 
