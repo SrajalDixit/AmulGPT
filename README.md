@@ -18,6 +18,7 @@ The chatbot uses:
 ```bash
 git clone https://github.com/SrajalDixit/AmulGPT
 cd AmulGPT
+```
 
 
 
