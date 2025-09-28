@@ -14,7 +14,9 @@ The chatbot uses:
 </p>
 ## Installation
 Follow the steps below to set up and run AmulGPT locally or with Docker.
-`git clone <your-repo-url>
-cd AmulGPT`
+```bash
+conda create -n amulgpt python=3.10
+conda activate amulgpt
+python app/gradio_app.py
 
 
