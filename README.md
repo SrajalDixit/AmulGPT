@@ -13,7 +13,7 @@ The chatbot uses:
   <img src="assets/screenshots/amulgpt3.png" alt="AI Assistant" width="250"/>
 </p>
 ## Installation
-Follow the steps below to set up and run AmulGPT locally or with Docker.
+<p>Follow the steps below to set up and run AmulGPT locally or with Docker.</p>
 > git clone <your-repo-url>
 cd AmulGPT
 
