@@ -24,4 +24,68 @@ Follow these steps to set up and run **AmulGPT**.
 ```bash
 git clone https://github.com/SrajalDixit/AmulGPT
 cd AmulGPT
+```
+
+### 2. Conda Environment Setup
+```bash
+conda create -n amulgpt python=3.10
+```
+
+#### Create environment
+```bash
+conda create -n amulgpt python=3.10
+```
+
+#### Activate environment
+```bash
+conda activate amulgpt
+```
+
+#### Install dependencies
+```bash
+conda env update --file environment.yml
+```
+
+### 3. Running Python Files
+```bash
+python app/gradio_app.py
+```
+
+### Docker Setup
+
+#### Build Docker image
+```bash
+docker build -t srajaldixit/amulgpt:latest .
+```
+
+#### Run Docker container
+```bash
+docker run -d --name amulgpt --env-file .env --network host srajaldixit/amulgpt:latest
+```
+
+#### Remove container
+```bash
+docker rm -f amulgpt
+```
+
+### 5. Ollama Setup
+
+#### Install Ollama
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+#### Pull a model
+
+```bash
+ollama pull llama3.2:1b
+```
+#### Run the model
+```bash
+ollama run llama3.2:1b
+```
+
+
+
 
