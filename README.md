@@ -100,7 +100,7 @@ python app/gradio_app.py
 ```bash
 docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
 ```
-⚠️ Caution: The model may hallucinate sometimes due to weak prompts or model limitations.
+⚠️ Note : The model may hallucinate sometimes due to weak prompts or model limitations.
 
 
 
