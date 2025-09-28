@@ -1,5 +1,10 @@
 import gradio as gr
-from rag_server import ask_amul  # import your existing function
+from app.rag_server import ask_amul
+from app.prompt_file import PROMPT
+from app.rag_server import ask_amul
+
+
+
 
 def chat_with_amul(message, history):
     """Wrapper for Gradio to use ask_amul with conversation history."""
@@ -19,4 +24,5 @@ with gr.Blocks(css=".chatbot {height: 600px}") as demo:
     clear.click(lambda: None, None, chatbot, queue=False)
 
 if __name__ == "__main__":
-    demo.launch(share=True)
+    demo.launch(server_name="0.0.0.0", server_port=8000, share=False)
+

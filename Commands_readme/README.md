@@ -74,6 +74,16 @@ sudo service docker start
 sudo usermod -aG docker $USER
 ```
 
+### Running docker image
+```bash
+docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
+```
+
+### Build docker image
+```bash
+docker build -t srajaldixit/amulgpt:latest .
+```
+
 ## To check ubuntu version
 
 ```bash

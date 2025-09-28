@@ -83,6 +83,8 @@ dependencies:
       - kubernetes==33.1.0
       - langchain==0.3.27
       - langchain-core==0.3.74
+      - langchain_community
+      - sentence-transformers
       - langchain-text-splitters==0.3.9
       - langsmith==0.4.14
       - markdown-it-py==4.0.0
@@ -106,12 +108,14 @@ dependencies:
       - packaging==25.0
       - pandas==2.3.1
       - pillow==11.3.0
+      - pinecone
       - posthog==5.4.0
       - protobuf==6.31.1
       - pyarrow==21.0.0
       - pyasn1==0.6.1
       - pyasn1-modules==0.4.2
       - pybase64==1.4.2
+      - langchain_pinecone
       - pydantic==2.11.7
       - pydantic-core==2.33.2
       - pydeck==0.9.1

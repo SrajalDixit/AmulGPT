@@ -5,7 +5,7 @@ from ollama import Client
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone
-from prompt_file import PROMPT  # keep your witty Amul prompt template
+from app.prompt_file import PROMPT  # keep your witty Amul prompt template
 
 # 1. Load environment variables
 load_dotenv()

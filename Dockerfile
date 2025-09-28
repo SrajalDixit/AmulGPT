@@ -1,19 +1,25 @@
-FROM python:3.10-slim
+# Base image with Miniconda
+FROM continuumio/miniconda3
 
+# Set working directory
 WORKDIR /app
 
-# Install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy environment file
+COPY environment.yml .
 
-# Copy all project files
+# Create the conda environment
+RUN conda env create -f environment.yml
+
+# Copy project files
 COPY . .
 
-# Build Chroma DB on container start
-RUN python backend/chroma_setup.py
+# Expose the port
+EXPOSE 8000
 
-# Expose port for Gradio
-EXPOSE 7860
+# Use bash and activate conda environment at runtime
+CMD ["bash", "-c", "source activate amulgpt && python -m app.gradio_app"]
 
-# Run the frontend
-CMD ["python", "frontend/app.py"]
+
+
+
+
