@@ -17,5 +17,5 @@ Follow the steps below to set up and run AmulGPT locally or with Docker.
 ```bash
 git clone <your-repo-url>
 cd AmulGPT
-```
+
 
