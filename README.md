@@ -111,10 +111,12 @@ docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
 ## Features / Tech Stack
 
 - **Ollama 3.2 (1B parameters)** – Local language model powering responses.  
+- **LangChain** – Orchestrates the RAG (Retrieval-Augmented Generation) pipeline for combining document retrieval with generative AI.  
 - **WSL (Windows Subsystem for Linux)** – Provides an easy Linux environment for running the project.  
-- **Docker Containers** – Allows running the project in a single click with all dependencies preconfigured.  
+- **Docker Containers** – Run the project in a single click with all dependencies preconfigured.  
 - **Gradio** – Interactive web UI for chatting with AmulGPT.  
-- **Pinecone** – Vector database for fast semantic search and RAG-based responses.
+- **Pinecone** – Vector database for fast semantic search and RAG-based responses.  
+
 
 ⚠️ Note : The model may hallucinate sometimes due to weak prompts or model limitations.
 
