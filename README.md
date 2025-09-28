@@ -85,6 +85,25 @@ ollama pull llama3.2:1b
 ```bash
 ollama run llama3.2:1b
 ```
+## Usage
+
+### Running Locally
+
+After setting up the conda environment:
+
+```bash
+conda activate amulgpt
+python app/gradio_app.py
+```
+
+### Running via Docker
+```bash
+docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
+```
+⚠️ Caution: The model may hallucinate sometimes due to weak prompts or model limitations.
+
+
+
 
 
 
