@@ -84,6 +84,11 @@ docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
 docker build -t srajaldixit/amulgpt:latest .
 ```
 
+### Remove container
+```bash
+docker rm -f amulgpt
+```
+
 ## To check ubuntu version
 
 ```bash
