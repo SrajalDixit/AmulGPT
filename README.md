@@ -109,6 +109,8 @@ docker run -p 8000:8000 --env-file .env srajaldixit/amulgpt:latest
 ```
 ⚠️ Note : The model may hallucinate sometimes due to weak prompts or model limitations.
 
+If you ever get stuck, you can rely on the commands folder, which contains a detailed Markdown file (commands.md) listing all commands for environment setup, conda, Docker, and Ollama.
+
 
 
 
